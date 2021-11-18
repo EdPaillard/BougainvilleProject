@@ -1,0 +1,617 @@
+/* ------- Général ------- */
+
+html, body, main, h1, h2, h3, h4, h5, h6, p, ul, ol, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../font/SpaceMono-Regular-webfont.eot');
+    src: url('../font/SpaceMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/SpaceMono-Regular-webfont.woff2') format('woff2'),
+         url('../font/SpaceMono-Regular-webfont.woff') format('woff'),
+         url('../font/SpaceMono-Regular-webfont.ttf') format('truetype'),
+         url('../font/SpaceMono-Regular-webfont.svg#space_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'gothic';
+	src: url('../font/gothic.eot');
+	src: url('../font/gothic.woff') format('woff'), 
+		 url('../font/gothic.ttf') format('truetype');
+}
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'gothic', 'space_monoregular', Arial, serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+body
+{
+    background-image: url(../image/bg_main.png);
+    background-size: cover;
+}
+
+section
+{
+    width: 80%;
+    text-align: center;
+    margin: 50px;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+h2
+{
+    font-size: 500%;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* ------- Header ------- */
+
+header
+{
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1% 2%;
+    z-index: 40;
+    height: 100px;
+}
+
+header img
+{
+    height: 68px;
+    width: 76px;
+}
+
+header p
+{
+    position: absolute;
+    right: 2%;
+    font-size: 150%;
+}
+
+/* ------- Main Menu ------- */
+
+#mainMenu
+{
+    margin-left: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainMenu img
+{
+    width: 48px;
+    height: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#mainMenu ul
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainMenu ul li
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainMenu ul li
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainMenu ul li:hover
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(rgba(228, 228, 228, 1), black);
+}
+
+
+/* ------- Hambutton ------- */
+
+#sideMainMenu
+{
+    margin-left: 5%;
+}
+
+#hambutton
+{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 7px;
+    position: relative;
+    cursor: pointer;
+}
+
+#trigSideNav
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.menuHamb
+{
+    border-top: solid 3px white;
+    height: 0;
+    padding-bottom: 7px;
+}
+
+#sideNav
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 0px;
+    /*transition: all 1s ease-in-out;*/
+    background-color: #000;
+    z-index: -1;
+    display: flex;
+    justify-content: left;
+    padding-top: 140px;
+}
+
+.sideMenu
+{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sideMenu a
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+}
+
+nav div ul a
+{
+    font-size: 30px;
+}
+
+nav div ul li
+{
+    width: 100%;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav div ul li:hover
+{
+    background-color: rgba(245, 245, 245, 1);
+}
+
+nav div ul li:hover > a
+{
+    color:  rgba(159, 202, 255, 1);
+}
+
+.subMenu
+{
+    padding-left: 28%;
+    height: 50px;
+}
+
+.subMenu:hover
+{
+    background-color: rgba(225, 225, 225, 1)
+}
+
+.subMenu a
+{
+    font-size: 20px;
+}
+
+.subMenu a:hover
+{
+    background-color: rgba(225, 225, 225, 1)
+}
+
+/* ------- Main News ------- */
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsMainWrapper
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titleMainArticle
+{
+    position:  absolute;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.titleImgMainArticle
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+.imgMainArticle
+{
+    width: 100%;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+/* ------- Main Frags ------- */
+
+#sectionMainFrag
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainFragArticle
+{
+    width: 47%;
+    overflow: hidden;
+}
+
+.fragMainWrapper
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgFragLeft
+{
+    width: 100%;
+    transform: scale(1.1);
+}
+
+#imgFragRight
+{
+    width: 100%;
+    transform: scale(1.1);
+}
+
+#titleFragMainRight
+{
+    position: absolute;
+    transform: rotate(90deg);
+    left: -40px;
+    font-size: 320%;
+    border-bottom: solid 10px white;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+#titleFragMainLeft
+{
+    position: absolute;
+    transform: rotate(90deg);
+    left: -40px;
+    font-size: 320%;
+    border-bottom: solid 10px white;
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+.logoFragMain
+{
+    position: absolute;
+    height: 70%;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#trigHov
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#trigHov1
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#trigHov2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* ------- Main Shop ------- */
+
+#shopMainWrapper
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------- Footer RS ------- */
+hr
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.listRS
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pulse:hover
+{
+    transform: scale(1.3);
+}
+
+/* ------- Media Queries ------- */
+
+@media all and (min-width: 0px) and (max-width: 320px)
+{
+    header p
+    {
+        font-size: 120%;
+        right: 5%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 80%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 70%;
+        left: -9px;
+        border-bottom: solid 2px white;
+    }
+
+    section
+    {
+        margin: 10px 50px;
+    }
+
+    #mainMenu img
+    {
+        display: none;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 425px)
+{
+    header p
+    {
+        font-size: 120%;
+        right: 5%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 95%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 80%;
+        left: -9px;
+        border-bottom: solid 2px white;
+    }
+
+    section
+    {
+        margin: 10px 50px;
+    }
+
+    #mainMenu img
+    {
+        display: none;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 767px)
+{
+    header p
+    {
+        font-size: 120%;
+        right: 5%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 120%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 105%;
+        left: -13px;
+        border-bottom: solid 3px white;
+    }
+
+    section
+    {
+        margin: 10px 50px;
+    }
+
+    #mainMenu img
+    {
+        width: 30px;
+        height: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px)
+{
+    header p
+    {
+        font-size: 120%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 210%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 200%;
+        left: -27px;
+        border-bottom: solid 5px white;
+    }
+
+    section
+    {
+        margin: 20px 50px;
+    }
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1441px)
+{
+    header p
+    {
+        font-size: 220%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 290%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 300%;
+        left: -40px;
+        border-bottom: solid 7px white;
+    }
+
+    section
+    {
+        margin: 30px 50px;
+    }
+}
+
+@media all and (min-width: 1441px) and (max-width: 2000px)
+{
+    header p
+    {
+        font-size: 220%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 500%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 450%;
+        left: -60px;
+        border-bottom: solid 10px white;
+    }
+}
+
+@media all and (min-width: 2001px)
+{
+    header p
+    {
+        font-size: 220%;
+    }
+
+    .titleMainArticle
+    {
+        font-size: 700%;
+        z-index: 10;
+    }
+
+    .titleFragMain
+    {
+        font-size: 650%;
+        left: -85px;
+        border-bottom: solid 15px white;
+    }
+}

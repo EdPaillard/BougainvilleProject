@@ -1,0 +1,86 @@
+/* ------- Timeline ------- */
+
+#timelineSection
+{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#timelineArticle
+{
+	margin-bottom: 20px;
+}
+
+#pullTimelineArticle
+{
+	margin-top: 20px;
+}
+
+#containerOne
+{
+	display: flex;
+	background-color: #141414;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+#containerTwo
+{
+	display: flex;
+	background-color: #141414;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+#containerThree
+{
+	display: flex;
+	background-color: #141414;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+#containerFour
+{
+	display: flex;
+	background-color: #141414;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 20px;
+}
+
+.dropBox
+{
+	background: linear-gradient(to right, #272727, #202020);
+	width: 20%;
+	height: 80px;
+}
+
+.dropBox img
+{
+	width: 100%;
+	height: 80px;	
+}
+
+.dropBox2
+{
+	margin-right: 6.6%;
+}
+
+#fragContainer
+{
+	background-color: black;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 240px;
+}
+
+#fragContainer img
+{
+	width: 100%;
+	height: 80px;
+}

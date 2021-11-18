@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta name="author" content="Squallichon">
+            <meta name="description" content="Bougainville est un site agissant comme un hub pour parcourir l'histoire fragmentée des aventures du capitaine Hautbrave.">
+            <link rel="shortcut icon" href="../image/icone_bougain.ico" type="image/x-icon">
+            <link rel="stylesheet" href="../css/substyle.css" />
+            <link rel="stylesheet" href="../css/style.css" />
+            <title>Inscription</title>
+        </head>
+<body>
+    <header>
+        <a href="/"><img src="../image/logo_boug.png" alt="Logo Bougainville" /></a>
+        <nav id="sideMainMenu">
+            <div id="hambutton">
+                <div class="menuHamb"></div>
+                <div class="menuHamb"></div>      <!-- Hambutton !-->
+                <div class="menuHamb"></div>
+                <div id="trigSideNav"></div>
+            </div>
+            <div id="sideNav">
+                <ul class="sideMenu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="#">Bougainville++</a></li>
+                    <li class="subMenu"><a href="/apropos">Présentation</a></li>
+                    <li class="subMenu"><a href="/contact">Contact</a></li>
+                    <li><a href="/fragments">Fragments</a></li>
+                    <li class="subMenu"><a href="/arcs">Les Arcs</a></li>
+                    <li class="subMenu"><a href="/timeline">Les lignes du Temps</a></li>
+                    <li class="subMenu"><a href="/hautbrave546">Hautbrave #546</a></li>
+                    <li><a href="/boutique">Boutique</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mainMenu">
+            <ul>
+                <li><a href="/"><img src="../image/home_ico.png" alt="Home button"></a></li>
+                <li><a href="#"><img src="../image/boug+_ico.png" alt="bougainvile++ button"></a></li>
+                <li><a href="/fragments"><img src="../image/frag_ico.png" alt="fragments button"></a></li>
+                <li><a href="/boutique"><img src="../image/shop_ico.png" alt="shop button"></a></li>
+            </ul>
+        </nav>
+        <p><span>En</span>/<span>Fr</span><!-- Switch language !--></p>           
+    </header>
+
+    <section id="subSection">
+        <form action="/inscription" method="POST">
+            <label for="email_address">Adresse Email</label>
+            <input id="email_address" name="email" type="email" placeholder="exemple@exemple.com" required>
+            <label for="password">Mot de passe</label>
+            <input id="password" type="password" required>
+            <label data-error="Mot de passe incorrect" for="confirm_password">Confirmez votre mot de passe</label>
+            <input class="invalid" id="confirm_password" type="password" name="password" required>
+            <input id="inscriptionBtn" type="submit">
+        </form>
+    </section>
+    <script src="../js/confirmPass.js"></script>    
+</body>
+</html>
